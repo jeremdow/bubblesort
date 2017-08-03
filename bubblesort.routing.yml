@@ -1,0 +1,8 @@
+
+bubblesort.default_controller_sort:
+  path: '/bubblesort/sort'
+  defaults:
+    _controller: '\Drupal\bubblesort\Controller\DefaultController::sort'
+    _title: 'Sort'
+  requirements:
+    _permission: 'access content'
