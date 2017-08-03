@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - bubblesort
+_core:
+  default_config_hash: UWXb8-s_p2OTEe-VuiS_P_51sYa60ooLAmCL13Xxv8s
 id: vector.field_array
 field_name: field_array
 entity_type: vector

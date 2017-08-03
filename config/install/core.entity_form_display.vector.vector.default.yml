@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.vector.vector.field_array
+    - field.field.vector.vector.field_sorted
   module:
     - bubblesort
+_core:
+  default_config_hash: RrDdccbjXaDEUG7Znp5yVnExzGby9eOGsMypbr5Jotk
 id: vector.vector.default
 targetEntityType: vector
 bundle: vector
@@ -13,11 +16,25 @@ mode: default
 content:
   field_array:
     type: number
-    weight: 0
+    weight: 1
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
+  field_sorted:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
 hidden:
-  name: true
   user_id: true

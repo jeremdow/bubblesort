@@ -1,0 +1,24 @@
+uuid: bed8ba9d-3d09-4452-8137-fd2bb67030d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.vector.field_sorted
+  module:
+    - bubblesort
+id: vector.vector.field_sorted
+field_name: field_sorted
+entity_type: vector
+bundle: vector
+label: Sorted
+description: 'This array is already sorted.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

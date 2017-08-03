@@ -1,11 +1,14 @@
-d: 6a77808c-9f89-4240-bb3e-912453c7c9ca
+uuid: 4e4af239-2d32-4e32-a3ed-250c0ed98378
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.vector.vector.field_array
+    - field.field.vector.vector.field_sorted
   module:
     - bubblesort
+_core:
+  default_config_hash: eS5LODEhn6mttSeVtKS8VMMAKCbr1YSu8wGMkQxlkoI
 id: vector.vector.default
 targetEntityType: vector
 bundle: vector
@@ -20,6 +23,16 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
+  field_sorted:
+    weight: 2
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
 hidden:
   name: true
   user_id: true

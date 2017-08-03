@@ -6,12 +6,14 @@ dependencies:
     - field.storage.vector.field_array
   module:
     - bubblesort
+_core:
+  default_config_hash: Ke3MDz3bc7w_MNKbHURYav8Zqsu5t0RBZ0ScZ5wtgKQ
 id: vector.vector.field_array
 field_name: field_array
 entity_type: vector
 bundle: vector
 label: Array
-description: ''
+description: 'An array of integers between 0 and 100 which can be sorted.'
 required: false
 translatable: false
 default_value: {  }
