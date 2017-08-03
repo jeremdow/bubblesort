@@ -1,0 +1,25 @@
+d: 6a77808c-9f89-4240-bb3e-912453c7c9ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.vector.vector.field_array
+  module:
+    - bubblesort
+id: vector.vector.default
+targetEntityType: vector
+bundle: vector
+mode: default
+content:
+  field_array:
+    type: number_integer
+    weight: 0
+    region: content
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+hidden:
+  name: true
+  user_id: true

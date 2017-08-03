@@ -1,0 +1,14 @@
+
+# Vector menu items definition
+entity.vector.collection:
+  title: 'Vector list'
+  route_name: entity.vector.collection
+  description: 'List Vector entities'
+  parent: system.admin_structure
+  weight: 100
+
+vector.admin.structure.settings:
+  title: Vector settings
+  description: 'Configure Vector entities'
+  route_name: vector.settings
+  parent: system.admin_structure

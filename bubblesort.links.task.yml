@@ -1,0 +1,27 @@
+# Vector routing definition
+vector.settings_tab:
+  route_name: vector.settings
+  title: 'Settings'
+  base_route: vector.settings
+
+entity.vector.canonical:
+  route_name: entity.vector.canonical
+  base_route: entity.vector.canonical
+  title: 'View'
+
+entity.vector.edit_form:
+  route_name: entity.vector.edit_form
+  base_route: entity.vector.canonical
+  title: 'Edit'
+
+entity.vector.version_history:
+  route_name: entity.vector.version_history
+  base_route: entity.vector.canonical
+  title: 'Revisions'
+
+entity.vector.delete_form:
+  route_name:  entity.vector.delete_form
+  base_route:  entity.vector.canonical
+  title: Delete
+  weight: 10
+

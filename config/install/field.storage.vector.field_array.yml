@@ -1,0 +1,20 @@
+uuid: 65fce16e-12f9-45f8-a217-0890ff5439e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - bubblesort
+id: vector.field_array
+field_name: field_array
+entity_type: vector
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,33 @@
+add vector entities:
+  title: 'Create new Vector entities'
+
+administer vector entities:
+  title: 'Administer Vector entities'
+  description: 'Allow to access the administration form to configure Vector entities.'
+  restrict access: true
+
+delete vector entities:
+  title: 'Delete Vector entities'
+
+edit vector entities:
+  title: 'Edit Vector entities'
+
+access vector overview:
+  title: 'Access the Vector overview page'
+
+view published vector entities:
+  title: 'View published Vector entities'
+
+view unpublished vector entities:
+  title: 'View unpublished Vector entities'
+
+view all vector revisions:
+  title: 'View all Vector revisions'
+
+revert all vector revisions:
+  title: 'Revert all Vector revisions'
+  description: 'Role requires permission <em>view Vector revisions</em> and <em>edit rights</em> for vector entities in question or <em>administer vector entities</em>.'
+
+delete all vector revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Vector revisions</em> and <em>delete rights</em> for vector entities in question or <em>administer vector entities</em>.'

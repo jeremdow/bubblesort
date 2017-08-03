@@ -1,0 +1,22 @@
+{#
+/**
+ * @file vector.html.twig
+ * Default theme implementation to present Vector data.
+ *
+ * This template is used when viewing Vector pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_vector()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('vector') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

@@ -1,0 +1,5 @@
+entity.vector.add_form:
+  route_name: entity.vector.add_form
+  title: 'Add Vector'
+  appears_on:
+    - entity.vector.collection

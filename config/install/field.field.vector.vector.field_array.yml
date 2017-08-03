@@ -1,0 +1,24 @@
+uuid: e1989dc9-cfad-419a-9f96-3c0a7daa1c2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.vector.field_array
+  module:
+    - bubblesort
+id: vector.vector.field_array
+field_name: field_array
+entity_type: vector
+bundle: vector
+label: Array
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 99
+  prefix: ''
+  suffix: ''
+field_type: integer

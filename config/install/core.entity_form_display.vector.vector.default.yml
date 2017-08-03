@@ -1,0 +1,23 @@
+uuid: fadd76a5-f885-4be3-a671-27342b3e9018
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.vector.vector.field_array
+  module:
+    - bubblesort
+id: vector.vector.default
+targetEntityType: vector
+bundle: vector
+mode: default
+content:
+  field_array:
+    type: number
+    weight: 0
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  name: true
+  user_id: true
