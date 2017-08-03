@@ -10,15 +10,15 @@ use Drupal\Core\Controller\ControllerBase;
 class DefaultController extends ControllerBase {
 
   /**
-   * Sort.
+   * Render BubbleSort simulation.
    *
-   * @return string
-   *   Return Hello string.
+   * @return array
+   *   An array as expected by drupal_render().
    */
-  public function sort() {
+  public function render() {
     return [
       '#theme' => 'bubblesort',
-      '#test_var' => $this->t('Implement method: sort')
+      '#test_var' => $this->t('This is passed from the default controller.')
     ];
   }
 
