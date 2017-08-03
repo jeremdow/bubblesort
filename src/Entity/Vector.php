@@ -137,6 +137,30 @@ class Vector extends RevisionableContentEntityBase implements VectorInterface {
   /**
    * {@inheritdoc}
    */
+  public function shuffle() {
+    $array = $this->get('field_array')->getValue();
+
+    for ($i =0; $i < count($array); $i++) {
+      $this->get('field_array')->set($i, ['value' => rand(1, 99)]);
+    }
+
+    $this->field_sorted->value = false;
+
+    // Save a new revision
+    $this->setNewRevision();
+
+    // If a new revision is created, save the current user as revision author.
+    $this->setRevisionCreationTime(REQUEST_TIME);
+    $this->setRevisionUserId(\Drupal::currentUser()->id());
+
+    $this->save();
+
+    return $this;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function getName() {
     return $this->get('name')->value;
   }
