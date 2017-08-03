@@ -6,3 +6,10 @@ bubblesort.default_controller_sort:
     _title: 'BubbleSort Simulation'
   requirements:
     _permission: 'access content'
+
+entity.vector.canonical:
+  path: '/vector/{vector}'
+  defaults:
+    _entity_view: 'vector'
+  requirements:
+    _entity_access: 'vector.view'

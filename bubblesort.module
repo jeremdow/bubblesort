@@ -28,6 +28,9 @@ function bubblesort_help($route_name, RouteMatchInterface $route_match) {
  */
 function bubblesort_theme() {
   return [
+    'vector' => array(
+      'render element' => 'elements',
+    ),
     'bubblesort' => [
       'render element' => 'children',
       'variables' => ['test_var' => NULL],
