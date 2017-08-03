@@ -1,12 +1,4 @@
 
-bubblesort.default_controller_sort:
-  path: '/bubblesort'
-  defaults:
-    _controller: '\Drupal\bubblesort\Controller\DefaultController::render'
-    _title: 'BubbleSort Simulation'
-  requirements:
-    _permission: 'access content'
-
 entity.vector.canonical:
   path: '/vector/{vector}'
   defaults:
