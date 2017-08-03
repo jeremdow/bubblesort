@@ -1,0 +1,14 @@
+{
+  "name": "drupal/bubblesort",
+  "type": "drupal-custom-module",
+  "description": "Implements a bubble sort simulation in Drupal.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/bubblesort",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/bubblesort",
+    "source": "http://cgit.drupalcode.org/bubblesort"
+  },
+  "require": { }
+}

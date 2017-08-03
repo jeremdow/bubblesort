@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains bubblesort.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function bubblesort_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the bubblesort module.
+    case 'help.page.bubblesort':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Implements a bubble sort simulation in Drupal') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function bubblesort_theme() {
+  return [
+    'bubblesort' => [
+      'render element' => 'children',
+    ],
+  ];
+}

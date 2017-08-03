@@ -1,0 +1,5 @@
+name: BubbleSort
+type: module
+description: Implements a bubble sort simulation in Drupal.
+core: 8.x
+package: Custom
