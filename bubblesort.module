@@ -30,6 +30,7 @@ function bubblesort_theme() {
   return [
     'bubblesort' => [
       'render element' => 'children',
+      'variables' => ['test_var' => NULL],
     ],
   ];
 }

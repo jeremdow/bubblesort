@@ -17,8 +17,8 @@ class DefaultController extends ControllerBase {
    */
   public function sort() {
     return [
-      '#type' => 'markup',
-      '#markup' => $this->t('Implement method: sort')
+      '#theme' => 'bubblesort',
+      '#test_var' => $this->t('Implement method: sort')
     ];
   }
 
