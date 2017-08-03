@@ -1,2 +1,2 @@
-# bubblesort
-Implements a bubble sort simulation in Drupal
+# BubbleSort
+Implements a bubble sort simulation in Drupal.

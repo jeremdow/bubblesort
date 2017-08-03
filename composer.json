@@ -4,11 +4,11 @@
   "description": "Implements a bubble sort simulation in Drupal.",
   "keywords": ["Drupal"],
   "license": "GPL-2.0+",
-  "homepage": "https://www.drupal.org/project/bubblesort",
+  "homepage": "https://github.com/jeremdow/bubblesort",
   "minimum-stability": "dev",
   "support": {
-    "issues": "https://www.drupal.org/project/issues/bubblesort",
-    "source": "http://cgit.drupalcode.org/bubblesort"
+    "issues": "https://github.com/jeremdow/bubblesort/issues",
+    "source": "https://github.com/jeremdow/bubblesort"
   },
   "require": { }
 }
