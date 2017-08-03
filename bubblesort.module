@@ -51,7 +51,7 @@ function bubblesort_theme() {
  */
 function template_preprocess_vector(array &$variables) {
   // Fetch Vector Entity Object.
-  $vector = $variables['elements']['#vector'];
+  $variables['vector'] = $variables['elements']['#vector'];
 
   // Helpful $content variable for templates.
   foreach (Element::children($variables['elements']) as $key) {
