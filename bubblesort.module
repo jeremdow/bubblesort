@@ -53,6 +53,11 @@ function template_preprocess_vector(array &$variables) {
   // Fetch Vector Entity Object.
   $variables['vector'] = $variables['elements']['#vector'];
 
+  // Load the sort form
+  $variables['form'] = \Drupal::formBuilder()->getForm(
+    'Drupal\bubblesort\Form\SortForm', $variables['vector']
+  );
+
   // Helpful $content variable for templates.
   foreach (Element::children($variables['elements']) as $key) {
     $variables['content'][$key] = $variables['elements'][$key];

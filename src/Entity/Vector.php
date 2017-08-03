@@ -100,6 +100,43 @@ class Vector extends RevisionableContentEntityBase implements VectorInterface {
   /**
    * {@inheritdoc}
    */
+  public function sort() {
+    $array = $this->get('field_array')->getValue();
+
+    $swapped = false;
+
+    for ($i = 0; $i < count($array) - 1; $i++) {
+      if ($array[$i]['value'] > $array[$i + 1]['value']) {
+        $value = $array[$i]['value'];
+        $this->get('field_array')->set($i, $array[$i + 1]);
+        $array[$i]['value'] = $array[$i + 1]['value'];
+        $this->get('field_array')->set($i + 1, $value);
+        $array[$i + 1]['value'] = $value;
+        $swapped = true;
+      }
+    }
+
+    if (!$swapped) {
+      // Set the sorted field, and go home.
+      $this->field_sorted->value = true;
+      drupal_set_message(t('Sorted.'));
+    }
+
+    // Save a new revision
+    $this->setNewRevision();
+
+    // If a new revision is created, save the current user as revision author.
+    $this->setRevisionCreationTime(REQUEST_TIME);
+    $this->setRevisionUserId(\Drupal::currentUser()->id());
+
+    $this->save();
+
+    return $this;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function getName() {
     return $this->get('name')->value;
   }

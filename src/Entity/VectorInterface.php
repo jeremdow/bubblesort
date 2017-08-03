@@ -17,6 +17,14 @@ interface VectorInterface extends RevisionableInterface, RevisionLogInterface, E
   // Add get/set methods for your configuration properties here.
 
   /**
+   * Implement the bubblesort
+   *
+   * @return \Drupal\bubblesort\Entity\VectorInterface
+   *   The called Vector entity.
+   */
+  public function sort();
+
+  /**
    * Gets the Vector name.
    *
    * @return string

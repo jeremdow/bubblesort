@@ -16,13 +16,14 @@
  */
 #}
 <article{{ attributes.addClass('vector') }}>
+  {{ form }}
   <table>
     <thead>
       <tr><th>i</th><th>value</th></tr>
     </thead>
     {% for i in vector.field_array %}
     <tr>
-      <td>{{ loop.index }}</td><td>{{ i.value }}</td>
+      <td>{{ loop.index0 }}</td><td>{{ i.value }}</td>
     </tr>
     {% endfor %}
   </table>
