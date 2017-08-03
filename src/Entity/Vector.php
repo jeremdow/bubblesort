@@ -106,7 +106,7 @@ class Vector extends RevisionableContentEntityBase implements VectorInterface {
     $swapped = false;
 
     for ($i = 0; $i < count($array) - 1; $i++) {
-      if ($array[$i]['value'] > $array[$i + 1]['value']) {
+      if ($array[$i]['value'] < $array[$i + 1]['value']) {
         $value = $array[$i]['value'];
         $this->get('field_array')->set($i, $array[$i + 1]);
         $array[$i]['value'] = $array[$i + 1]['value'];
